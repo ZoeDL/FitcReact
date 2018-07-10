@@ -1,0 +1,109 @@
+@import '../../global.less';
+
+.pageDetails {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    .content {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
+
+.header {
+    background-color: @content-background;
+    padding: .6em;
+    .person {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        padding-bottom: .6em;
+        border-bottom: 1px solid @separator-color;
+        .icon {
+            width: 2.5em;
+            height: 2.5em;
+            padding-right: .6em;
+            border-right: 1px solid #000000;
+            margin-right: .6em;
+            box-sizing: content-box;
+        }
+        .tag {
+            display: inline-flex;
+            background-color: #BF7E39;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            padding: 0 .5em;
+            line-height: 1.5em;
+            border-radius: .2em;
+            margin-right: .5em;
+        }
+    }
+    .number {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        div {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-align-items: center;
+            padding-top: .6em;
+            span:first-child {
+                color: @subtitle-color;
+                font-size: .8em;
+            }
+        }
+    }
+}
+
+.tips {
+    padding: .6em;
+    color: #32363C;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    img {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+.tab {
+    background-color: #232529;
+    width:100%;
+    text-align:center;
+    &.active {
+        background-color: #3A3F46;
+    }
+}
+
+:global {
+    html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+        content: none;
+    }
+}
+
+.button {
+    color: @font-white;
+    background-color: #FF7700;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    &::before {
+        content: none !important;
+    }
+}
+
+.price {
+    color: @yellow-dark;
+}

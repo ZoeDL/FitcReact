@@ -1,0 +1,39 @@
+@import '../../less/variables.less';
+
+.rating {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: .6em;
+    border-bottom: @border-separator;
+}
+
+.textarea {
+    margin: .3em 1em;
+    &>textarea {
+        background-color: transparent;
+        width: 100%;
+        min-height: 7em;
+        border: 1px solid gray;
+        padding: .3em;
+        font-size: .9em;
+        color: @text-color;
+    }
+}
+
+.button {
+    background-color: @yellow-dark;
+    color: @text-color;
+    margin: 3em 2em;
+    &::before {
+        content: none !important;
+    }
+}
+
+.commentWrap {
+    background-color: @background-content;
+    &>div:last-child {
+        padding: .6em;
+    }
+}

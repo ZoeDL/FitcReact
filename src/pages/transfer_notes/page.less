@@ -1,0 +1,58 @@
+@import '../../global.less';
+
+.header {
+    background-color: @content-background;
+    padding: 0 .6em;
+    .person {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: .6em 0;
+        border-bottom: 1px solid @separator-color;
+        .icon {
+            width: 2.5em;
+            height: 2.5em;
+            padding-right: .6em;
+            border-right: 1px solid #000000;
+            margin-right: .6em;
+            box-sizing: content-box;
+        }
+    }
+    .number {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        padding: .6em 0;
+        &>div {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-align-items: center;
+            &>span:first-child {
+                color: @subtitle-color;
+                font-size: .8em;
+                margin-bottom: .3em;
+            }
+        }
+    }
+}
+
+.tagsPaymentType {
+    border-width: 1px;
+    border-style: solid; 
+    border-radius: .2em;
+    padding: 0 .3em;
+    font-size: .9em;
+    border-color: #54B415;
+    color: #54B415;
+    margin-right: .3em;
+}
+
+.subtitle {
+    padding: .6rem;
+    font-size: .8em;
+    color: @subtitle-color;
+}

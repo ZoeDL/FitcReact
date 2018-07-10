@@ -1,0 +1,1 @@
+webpackJsonp([74],{"5G7b":function(e,a,t){"use strict";function c(){}Object.defineProperty(a,"__esModule",{value:!0}),a.default=c,c.platformMark=function(e){var a="";switch(e){case 0:a="\u6b63\u5e38";break;case 11:a="\u91cd\u590d\u7968\u636e";break;case 12:a="\u5f02\u8bae\u51bb\u7ed3"}return a}}});

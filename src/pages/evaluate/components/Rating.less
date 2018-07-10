@@ -1,0 +1,25 @@
+
+.wrapper {
+    display: inline-block;
+    &>span {
+        position: relative;
+        display: inline-block;
+        &>span {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            overflow: hidden;
+            margin-right: .5em;
+            img[alt='icon'] {
+                width: 2em;
+                height: 2em;
+            }
+            &:last-child {
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}

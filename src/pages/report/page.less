@@ -1,0 +1,79 @@
+@import '../../less/variables.less';
+
+.rowcell {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: @background-content;
+    border-bottom: @border-separator;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 .6em;
+    &>*:last-child {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1;
+        overflow: hidden;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    &>input {
+        background-color: transparent;
+        border: none;
+        text-align: right;
+    }
+}
+
+.comment {
+    margin-top: .8em;
+    background-color: @background-content;
+    padding: .6em;
+    textarea {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        min-height: 10em;
+        background-color: #282A2E;
+        padding: .3em;
+        font-size: .8em;
+    }
+}
+
+.uploader {
+    :global {
+        .ant-upload.ant-upload-select-picture-card {
+            height: 5em;
+            width: 5em;
+            border: none;
+            &>.ant-upload {
+                padding: 0;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .ant-upload-list-picture-card .ant-upload-list-item {
+            height: 5em;
+            width: 5em;
+            padding: 0;
+            border: none;
+            overflow: hidden;
+        }
+    }
+}
+
+.button {
+    margin-top: 3em;
+    background-color: @yellow-dark;
+    border: none;
+    border-radius: 0;
+    color: @text-color;
+    clear: both;
+    &::before {
+        content: none !important;
+    }
+}

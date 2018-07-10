@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    background-color: #232529;
+    color: #7D7D7D;
+    font-size: 0.8rem;
+    margin: 15px 0;
+    .text{
+        padding: 10px;
+    }
+    
+    :global{
+        .ant-upload.ant-upload-select-picture-card{
+            width: 95%;
+            margin-left: 10px;
+            border: none;
+            .ant-upload{
+                padding: 0 !important;
+                height: 200px !important;      
+                background-color: #3a3f46;
+                :local {
+                    .image{
+                        width: 100% !important;;
+                        height: auto !important;;
+                    }
+                }
+            }
+        }
+    }
+}

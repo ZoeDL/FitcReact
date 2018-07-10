@@ -1,0 +1,22 @@
+@import '../../../less/variables.less';
+
+.wrapper {
+    background-color: @background-content;
+    margin-top: .5em;
+    &>div {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        line-height: 2em;
+        height: 2em;
+        vertical-align: middle;
+        margin-left: .6em;
+        padding-right: .6em;
+        &:last-child {
+            border-top: @border-separator;
+        }
+    }
+}

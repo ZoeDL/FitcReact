@@ -1,0 +1,79 @@
+
+@itemBackgroundColor: #232529;
+@subTitltColor: #7d7d7d;
+
+
+.head {
+    background-color: @itemBackgroundColor;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 6px 12px;
+}
+
+.headItem {
+    line-height: 1.5em;
+    div:first-child {
+        font-size: .8em;
+        color: @subTitltColor;
+    }
+    div:nth-child(2) {
+        font-size: 1.2em;
+    }
+}
+
+.headLeft {
+    composes: headItem;
+    text-align: start;
+}
+
+.headCenter {
+    composes: headItem;
+    text-align: center;
+}
+
+.headRight {
+    composes: headItem;
+    text-align: right;
+}
+
+.listTitle {
+    color: @subTitltColor;
+    font-size: .8em;
+    padding: 12px;
+}
+
+.buttonDisable {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: @itemBackgroundColor;
+    color: #d7d7d7 !important;
+    opacity: 1 !important;
+}
+.buttonDefault {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color:#ff7700;
+    color: #d7d7d7 !important;
+    opacity: 1 !important;
+}
+.buttonFocus {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #ff5500;
+    color: #d7d7d7 !important;
+    opacity: 1 !important;
+}
+.button::before {
+    content: none !important;
+}

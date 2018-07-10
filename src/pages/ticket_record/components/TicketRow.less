@@ -1,0 +1,80 @@
+.container {
+    margin-top: .8em;
+    background-color: #232529;
+    position: relative;
+    padding-left: .6em;
+}
+
+.top {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    line-height: 2em;
+    height: 2em;
+}
+
+.tags {
+    font-size: .8em;
+    line-height: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+    padding: 0 .5em;
+    color: rgb(199, 85, 113);
+    &:nth-child(2) {
+        color: #06EB00;
+    }
+}
+
+html:not([data-scale]) .tags:nth-child(1)::before {
+    border-color: rgb(199, 85, 113);
+}
+
+html:not([data-scale]) .tags:nth-child(2)::before {
+    border-color: #06EB00;
+}
+
+.name {
+    font-size: .95em;
+}
+
+.middle {
+    display: -webkit-flex;
+    display: flex;
+    font-size: .95em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+}
+
+.ticketType {
+    margin-right: .8em;
+    color: rgb(199, 85, 113);
+}
+
+.money {
+    margin-right: .8em;
+}
+
+.bottom {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    color: #7D7D7D;
+    padding-right: .6em;
+}
+
+.date {
+    font-size: .8em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+}

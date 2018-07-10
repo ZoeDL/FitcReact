@@ -1,0 +1,94 @@
+/*
+ * 全局样式
+ * @Author: Honye 
+ * @Date: 2018-03-29 19:33:12 
+ * @Last Modified by: Honye
+ * @Last Modified time: 2018-05-04 18:11:07
+ */
+ @import './assets/less/animate.less';
+ @import './less/variables.less';
+
+@window-background: @background-window;      // 窗体背景色
+@screen-background: @background-screen;      // 屏幕背景色
+@content-background: @background-content;    // 内容背景色
+@separator-color: @color-separator;          // 分割线颜色
+@subtitle-color: @color-subtitle;            // 副标题颜色
+@font-white: @text-color;                    // 字体颜色
+
+
+html, body, :global(#root) {
+  font-size: 16px;
+  min-height: 100vh;
+  color: #D7D7D7;
+  background-color: #1C1E21;
+  font-family: 'PingFang SC', sans-serif;
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+}
+
+:global(.page-container) {
+  background-color: #1C1E21;
+  height: 100%;
+}
+
+:global(*::-webkit-scrollbar) {
+  display: none;
+}
+
+/** 覆盖 antd */
+:global(.am-navbar) {
+  background-color: #232529 !important;
+}
+
+.am-list-item .am-list-line .am-list-content {
+  color: #D7D7D7 !important;
+}
+
+:global(.row-cell) {
+  background-color: #232529 !important;
+  color: #D7D7D7;
+}
+
+html:not([data-scale])  .am-list-body div:not(:last-child) .am-list-line::after,
+html:not([data-scale]) .am-list-body::after {
+    background-color: #000 !important;
+}
+
+html:not([data-scale]) .am-list-body::before {
+  content: none !important;
+}
+
+.am-list-item.am-list-item-active {
+  background-color: #5C5C5C !important;
+}
+
+.am-list-body {
+  background-color: transparent;
+}
+
+.am-toast-notice-content .am-toast-text div{
+  word-break: break-word;
+}
+
+.am-action-sheet{
+	background-color: #232529 !important;
+    .am-action-sheet-button-list {
+		color: white !important;
+		.am-action-sheet-button-list-item::before{
+			background-color:black !important;
+		}
+		.am-action-sheet-button-list-item{
+			font-size: 0.9em !important;	
+			.am-action-sheet-cancel-button-mask{
+       			background-color: black !important;  		
+			}
+    	
+    }
+  }
+}
+
+
+.am-action-sheet-mask{
+	background-color: rgba(0, 0, 0, 0.6);
+}

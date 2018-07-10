@@ -1,0 +1,63 @@
+@import '../../../global.less';
+@import '../../../less/variables.less';
+
+.flex-row {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px 0;
+    div {
+        width: 33.3%;
+        text-align: center;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    background-color: @content-background;
+    .top {
+        .flex-row;
+        color: #6E757D;
+        border-bottom: 1px solid #1B1D20;
+        font-size: .85em;
+    }
+    .bottom {
+        .flex-row;
+        input {
+            overflow: hidden;
+            margin-right: .3em;
+            border: none;
+            background-color: #3a3f46;
+            color: @text-color;
+            width: 5em;
+            text-align: center;
+            line-height: 1.6em;
+        }
+    }
+}
+
+.modalContent {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    padding-top: .6em;
+    overflow: hidden;
+    input {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1;
+        overflow: hidden;
+        text-align: center;
+        background-color: @background-input;
+        border: none;
+    }
+    span {
+        margin: 0 .3em;
+    }
+}

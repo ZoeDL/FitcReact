@@ -1,0 +1,151 @@
+@import '../../global.less';
+
+.contentWrap {
+    padding-bottom: 2.6em;
+}
+
+.header {
+    background-color: @content-background;
+    padding: .6em;
+    .person {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        padding-bottom: .6em;
+        border-bottom: 1px solid @separator-color;
+        .type {
+            &>div:last-child:not(:first-child) {
+                margin-top: .5em;
+            }
+        }
+        .icon {
+            width: 2.5em;
+            height: 2.5em;
+            padding-right: .6em;
+            border-right: 1px solid #000000;
+            margin-right: .6em;
+            box-sizing: content-box;
+        }
+        .tag {
+            display: inline-flex;
+            background-color: #BF7E39;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            padding: 0 .5em;
+            line-height: 1.5em;
+            border-radius: .2em;
+            margin-right: .5em;
+        }
+    }
+    .number {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        div {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-align-items: center;
+            padding-top: .6em;
+            span:first-child {
+                color: @subtitle-color;
+                font-size: .8em;
+                margin-bottom: .3em;
+            }
+        }
+    }
+}
+
+.tagsPaymentType {
+    border-width: 1px;
+    border-style: solid; 
+    border-radius: .3em;
+    padding: .1em .3em;
+    margin-right: .3em;
+    font-size: .9em;
+    border-color: #54B415;
+    color: #54B415;
+}
+
+.status {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: @content-background;
+    padding: .6em;
+    vertical-align: middle;
+    &>div {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    .timer {
+        font-size: .8em;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        vertical-align: middle;
+        .timeDot {
+            background-color: #6B2020;
+            border-radius: 50%;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            text-align: center;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+        }
+    }
+    .statusText {
+        font-size: .8em;
+        color: #AE2F1F;
+    }
+}
+
+.subtitle {
+    padding: .6rem;
+    font-size: .8em;
+    color: @subtitle-color;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    &>div {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        line-height: 2.6em;
+        height: 2.6em;
+        flex: 1;
+        color: @font-white;
+    }
+    .btnAdd {
+        background-color: #3B7EEE;
+    }
+    .btnCommit {
+        background-color: #FF7700;
+    }
+}

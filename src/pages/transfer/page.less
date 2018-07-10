@@ -1,0 +1,121 @@
+@import '../../global.less';
+
+.dealHeader {
+    padding: 8px 15px;
+    vertical-align: middle;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    img {
+        width: 1.1em;
+        height: 1.1em;
+    }
+    div {
+        margin-left: 10px;
+    }
+}
+
+.inputRow {
+    display: flex;
+    display: -webkit-flex;
+    background-color: #444444;
+    padding: .3em .8em;
+    align-items: center;
+    -webkit-align-items: center;
+    input {
+        flex: 1;
+        text-align: right;
+        background-color: transparent;
+        border: none;
+        color: #d7d7d7;
+    }
+}
+
+.bottomBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    div {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: 10px;
+    }
+    div:nth-child(1) {
+        flex: 2;
+        background-color: #3B7EEE;
+    }
+    div:nth-child(2) {
+        flex: 3;
+    }
+    .btnCommit {
+        background-color: #FF7700
+    }
+    .btnCommit[disabled] {
+        background-color: #2A2D32;
+    }
+}
+
+html:not([data-scale]) .modal {
+    div {
+        text-align: start;
+    }
+    :global {
+        .am-modal-content {
+            background-color: @content-background;
+            .am-modal-body {
+                color: #d7d7d7;
+            }
+        }
+        .am-button::before {
+            content: none;
+        }
+    }
+    .header {
+        padding: 1em .3em;
+        text-align: center;
+        border-bottom: 1px solid @separator-color;
+    }
+    .content {
+        padding: .3em;
+        .subtitle {
+            line-height: 2em;
+        }
+        .radioGroup {
+            .radio {
+                width: 25%;
+                display: inline-block;
+                border: .3em solid @content-background;
+                box-sizing: border-box;
+                background-color: #3A3F46;
+                line-height: 2em;
+                text-align: center;
+                border-radius: .5em;
+                position: relative;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    height: 1em;
+                    visibility: hidden;
+                    &.active {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    .btnCommit {
+        background-color: #FF7700;
+        color: #d7d7d7;
+    }
+}

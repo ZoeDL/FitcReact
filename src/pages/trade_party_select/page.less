@@ -1,0 +1,20 @@
+@import '../../global.less';
+
+.listItem {
+    padding: .3em .5em;
+    border-bottom: .5px solid @separator-color;
+}
+
+html:not([data-scale]) .button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #FF7700;
+    color: white;
+    &::before {
+        content: none;
+    }
+}

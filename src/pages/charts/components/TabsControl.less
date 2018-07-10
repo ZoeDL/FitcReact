@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.subnavActive{
+    flex: 1;
+    text-align: center;
+    color: #CD6409;
+    position: relative;
+}
+
+.subnavActive:after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #CD6409;
+}
+
+.subnav{
+    flex: 1;
+    text-align: center;
+}

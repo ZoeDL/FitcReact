@@ -1,0 +1,70 @@
+@import '../../../global.less';
+@import '../../../less/variables.less';
+
+.dealWrap {
+    background-color: @content-background;
+    .top {
+        display: flex;
+        display: -webkit-flex;
+        padding: .5em 15px;
+        .tag {
+            display: inline-flex;
+            display: -webkit-inline-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            height: 1.5em;
+            line-height: 1.5em;
+            border: .5px solid #50A916;
+            color: #50A916;
+            margin-right: .5em;
+            border-radius: .3em;
+            padding: 0 .5em;
+            span:first-child {
+                font-size: .8em;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+        .tag[type='SP'] {
+            color: @red-light;
+            border-color: @red-light;
+        }
+        div:nth-child(2) {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
+    }
+    .middle {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: 5px 15px;
+        .yearRate {
+            input {
+                border: none;
+                background-color: #3A3F46;
+                color: white;
+                width: 5em;
+                text-align: center;
+                line-height: 1.6em;
+                margin-right: .3em;
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        border-top: 1px solid #1B1D20;
+        margin-left: 15px;
+        padding: .5em 15px .5em 0;
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../global.less';
+
+.wrapper {
+    background-color: @content-background;
+    padding-left: .6rem;
+    &>div {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: .6rem .6rem .6rem 0;
+    }
+    .top {
+        .tag {
+            border-width: 1px;
+            border-style: solid; 
+            border-radius: .2em;
+            padding: 0 .3em;
+            font-size: .9em;
+            border-color: #54B415;
+            color: #54B415;
+            margin-right: .3em;
+        }
+    }
+    .middle {
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        border-top: 1px solid @separator-color;
+        border-bottom: 1px solid @separator-color;
+        .numberWrap {
+            &>div:first-child {
+                font-size: .8em;
+                color: @subtitle-color;
+                margin-bottom: .3rem;
+            }
+        }
+    }
+    .bottom {
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        font-size: .8em;
+        color: @subtitle-color;
+    }
+}

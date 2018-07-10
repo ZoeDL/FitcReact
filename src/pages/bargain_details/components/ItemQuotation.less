@@ -1,0 +1,61 @@
+@import '../../../global.less';
+
+.wrapper {
+    padding: 0 .6rem;
+    background-color: @content-background;
+}
+
+.title {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    font-size: .8em;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: .6em 0;
+    border-bottom: 1px solid @separator-color;
+    .company {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        img[alt=icon] {
+            margin-right: .5em;
+        }
+    }
+    .time {
+        color: @subtitle-color;
+    }
+}
+
+.content {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: .6em 0;
+    &>div {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1;
+    }
+    .topBottom {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+        -webkit-align-items: center;
+        div:first-child {
+            font-size: .8em;
+            color: @subtitle-color;
+        }
+    }
+    .button {
+        background-color: #F23030;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+}

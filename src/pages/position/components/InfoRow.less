@@ -1,0 +1,116 @@
+.container{
+    font-size: 0.8rem;
+    margin: 10px 0;
+    background-color: #232529;
+}
+
+.topItem{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    color: white;
+    position: relative;
+}
+    
+.stock{
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    align-items: center;
+    -webkit-align-items: center;
+    overflow: hidden;
+}
+   
+    .status{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1.6em;
+        height: 1.6em;
+    }
+
+    html:not([data-scale]) .btn1{
+        padding: 0 .3em;
+        height: 1.5em;
+        line-height: 1.5em;
+        margin: 5px;
+    }
+    
+    .text{
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+        padding:8px 5px 8px 0;
+    }
+
+   html:not([data-scale]) .btn2{
+        color: orange;
+        border: orange 1px solid;
+        padding: 0 .3em;
+        height: 1.5em;
+        line-height: 1.5em;
+        white-space: nowrap;
+        margin: 8px;
+    }
+
+.eCash{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 8px;
+    border-bottom: #000 solid 1px;
+}
+ .info{
+     display: flex;
+     display: -webkit-flex;
+ }
+    .item{
+        margin-right: 15px;
+    }
+
+
+
+.botomItem{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 8px;
+    color: #7D7D7D;
+}
+
+:global(.am-swipe-content){
+    background-color: #232529;
+}
+
+:global(.am-modal-content){
+        background-color: #232529 !important; 
+}
+
+:global{
+     .am-modal-header{
+         padding: 0;
+        .am-modal-title{
+            color: white;
+            font-size: 13px;
+        }
+     } 
+}
+
+:global{
+    .am-modal-button-group-h {
+        .am-modal-button{
+            color: white;
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+        }
+        .am-modal-button:first-child{
+            color: white;
+            font-size: 13px;
+        }
+    }
+}

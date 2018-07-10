@@ -1,0 +1,43 @@
+
+.navBarWrap {
+    flex-shrink: 0;
+}
+
+.navBar {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    border-bottom: 1PX solid #ddd;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-transition: top .2s;
+    transition: top .2s;
+    z-index: 100;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    top: 0;
+    background-color: #232529;
+    color: white;
+    padding: 0 16px;
+    font-size: 1.2em;
+}
+
+.left {
+
+}
+
+.center {
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.right {
+
+}

@@ -1,0 +1,132 @@
+.container {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+    position: absolute;
+    transition: transform 50ms linear;
+    overflow: scroll;
+}
+
+.part {
+    width: 20%;
+    height: 100%;
+    float: left;
+    
+}
+
+.sidebar {
+    width: 80%;
+    height: 100%;
+    background-color: #212528;
+    float: right;
+    position: relative;
+}
+
+.title {
+    font-size: .85em;
+    color: #D7D7D7;
+    line-height: 2.5em;
+    text-indent: .5em;
+}
+
+.section {
+    border-bottom: 1px solid #000;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    flex: 0 1 30%;
+    line-height: 1.75em;
+    color: #FFF;
+    text-align: center;
+    background-color: #2F3031;
+    margin: 0 1.66% .5em 1.66%;
+    border-radius: .3em;
+    position: relative;
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 1em;
+        visibility: hidden;
+        &.tagsActive {
+            visibility: visible;
+        }
+    }
+}
+
+.tagActive {
+    color: #FE7800;
+}
+
+.area {
+    background-color: #1a1e1f;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.inputarea {
+    flex: 4;
+    text-align: center;
+}
+
+.linearea {
+    flex:1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputTag {
+    background-color: #323335;
+    text-align: center;
+    color: #FFF;
+    border: none;
+    line-height: 2em;
+    font-size: .9em;
+    border-radius: .3em;
+    margin: .5em auto;
+    width: 90%;
+}
+
+.datepicker {
+    z-index: 9999;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+}
+
+.buttonWrap {
+    flex: 1;
+}
+
+.button {
+    border: none;
+    outline: none;
+    border-radius: initial;
+    width: 100%;
+    color: #FFF;
+}
+
+.blueButton {
+    background-color: #3A7EED;
+}
+
+.orangeButton {
+    background-color: #FE7800;
+}
+
+.blueButtonActive {
+    background-color: #2F6696;
+}
+
+.orangeButtonActive {
+    background-color: orangered;
+}

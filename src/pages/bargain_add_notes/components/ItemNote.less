@@ -1,0 +1,68 @@
+@import '../../../global.less';
+
+.dealWrap {
+    background-color: @content-background;
+    .top {
+        display: flex;
+        display: -webkit-flex;
+        padding: .5em 15px;
+        div:first-child {
+            font-size: .8em;
+            margin-right: .5em;
+            border: .5px solid #50A916;
+            border-radius: .3em;
+            padding: 0 .6em;
+            line-height: 1.8em;
+            height: 1.8em;
+            vertical-align: middle;
+            box-sizing: content-box;
+            color: #50A916;
+        }
+        div:nth-child(2) {
+            margin-left: 8px;
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
+    }
+    .middle {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: 5px 15px;
+        &>div {
+            text-align: center;
+            &>div:first-child {
+                font-size: .8em;
+                color: @subtitle-color;
+                margin-bottom: calc(1em/.8*.3);
+            }
+        }
+        .yearRate {
+            input {
+                border: none;
+                background-color: #3A3F46;
+                color: white;
+                width: 5em;
+                text-align: center;
+                line-height: 1.6em;
+                margin-right: .3em;
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        border-top: 1px solid #1B1D20;
+        margin-left: 15px;
+        padding: .5em 15px .5em 0;
+        font-size: .8em;
+        color: @subtitle-color;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../../less/variables.less';
+
+.page {
+    
+}
+
+html:not([data-scale]) .button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    color: @text-color;
+    background-color: @yellow-dark;
+    &::before {
+        content: none !important;
+    }
+}

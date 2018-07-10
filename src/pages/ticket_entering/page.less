@@ -1,0 +1,55 @@
+.list {
+    margin-top: .8em;
+}
+
+.item {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.itemLeft {
+    flex: 1;
+    color: #767D86;
+}
+
+.itemRight {
+    flex: 3;
+    text-align: right;
+    white-space: initial;
+    &:empty::before {
+        color: #767D86;  
+        content:attr(placeholder);  
+    }
+}
+
+.inputItem {
+    background-color: #232529;
+    border: initial;
+    text-align: right;
+    width: 100%;
+    color: #D7D7D7;
+}
+
+.labelColor {
+    color: #767D86;
+}
+
+.button {
+    margin-top: .8em;
+    background-color: #ED8D03;
+    color: #FFF;
+    border-radius: initial;
+}
+
+.buttonActive {
+    background-color: #FF7700;
+}
+
+.extra {
+    color: #FFF !important;
+}
+
+
+

@@ -1,0 +1,98 @@
+@import '../../../../global.less';
+@import '../../../../less/variables.less';
+
+.wrapper {
+    &>div {
+        margin: .5em .5em .5em 0;
+        :global {
+            .am-button {
+                margin-right: .5em;
+            }
+        }
+    }
+    .button {
+        color: @text-color;
+        &::before {
+            content: none !important;
+        }
+        &:global {
+            &.am-button-primary {
+                background-color: @yellow-dark;
+            }
+            &.am-button-disabled {
+                color: @text-color;
+                background-color: #2a2d32;
+            }
+        }
+    }
+}
+
+.picker {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: #3A3F46;
+    margin: .5em .5em .5em 0;
+    &>div:first-child {
+        flex: 1;
+        border-right: 1px solid #000;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        &>div:first-child {
+            flex: 1;
+            padding-left: .5em;
+        }
+    }
+    &>div:last-child {
+        line-height: 2em;
+        height: 2em;
+        padding: 0 1em;
+    }
+}
+
+.table {
+    border: 1px solid #424348;
+    margin: .5em .5em .5em 0;
+    .row {
+        display: flex;
+        display: -webkit-flex;
+        font-size: .9em;
+        line-height: 1.5em;
+        &:not(:last-child) {
+            border-bottom: 1px solid #424348;
+        }
+        div {
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            -webkit-align-items: center;
+            line-height: 2em;
+        }
+        div:first-child {
+            flex: 1;
+            justify-content: center;
+            -webkit-justify-content: center;
+            color: @subtitle-color;
+            white-space: nowrap;
+        }
+        div:last-child {
+            flex: 2;
+            border-left: 1px solid #424348;
+            padding: 0 .3em;
+        }
+    }
+}
+
+.price {
+    color: @yellow-dark;
+}
+html:not([data-scale]) .btnYellow {
+    background-color: @yellow-dark;
+    color: white;
+    &::before {
+        content: none;
+    }
+}

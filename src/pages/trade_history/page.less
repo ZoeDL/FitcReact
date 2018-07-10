@@ -1,0 +1,38 @@
+@import '../../global.less';
+
+.header {
+    padding: .6em;
+    background-color: @content-background;
+    .dueDate {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        padding-bottom: .6em;
+        div {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+            span.tip {
+                font-size: .8em;
+                color: @subtitle-color;
+                margin-bottom: 1em;
+            }
+            .icon {
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+    .button {
+        background-color: #FF7700;
+        color: white;
+    }
+    :global {
+        .am-button::before {
+            content: none !important;
+        }
+    }
+}

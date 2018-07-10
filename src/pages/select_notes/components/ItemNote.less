@@ -1,0 +1,76 @@
+@import '../../../less/variables.less';
+
+.wrapper {
+    display: flex;
+    display: -webkit-flex;
+            align-items: center;
+    -webkit-align-items: center;
+    background-color: @background-content;
+    padding: 0 .6em;
+    img[alt='icon'] {
+        width: 1.5em;
+        height: 1.5em;
+        padding: 0 .3em;
+        box-sizing: content-box;
+    }
+    .content {
+        display: -webkit-flex;
+        display: flex;
+        flex: 1;
+        -webkit-flex: 1;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        &>div {
+            display: flex;
+            display: -webkit-flex;
+            padding: .3em 0;
+            &:nth-child(1) {
+                        align-items: center;
+                -webkit-align-items: center;
+                justify-content: space-between;
+                -webkit-justify-content: space-between;
+                .paymentType {
+                    line-height: 1.8em;
+                    height: 1.8em;
+                    font-size: .9em;
+                    vertical-align: middle;
+                    padding: 0 .3em;
+                    border: 1px solid @green;
+                    color: @green;
+                    border-radius: .3em;
+                    margin-right: .6em;
+                }
+                .tag {
+                    color: white;
+                    background-color: @blue-light;
+                    font-size: .9em;
+                    line-height: 1.8em;
+                    height: 1.8em;
+                    vertical-align: middle;
+                    padding: 0 .3em;
+                    white-space: nowrap;
+                }
+            }
+            &:nth-child(2) {
+               .type {
+                   color: @blue-dark;
+               }
+               &>span {
+                   margin-right: 1em;
+               }
+            }
+            &:nth-child(3) {
+                justify-content: space-between;
+                -webkit-justify-content: space-between;
+                border-top: @border-separator;
+                border-bottom: @border-separator;
+            }
+            &:nth-child(4) {
+                .reason {
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

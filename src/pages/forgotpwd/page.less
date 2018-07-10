@@ -1,0 +1,86 @@
+
+.tips {
+    line-height: 2em;
+    padding: 0 1em;
+    font-size: .8em;
+    color: #CACDD6;
+}
+
+.phone {
+    color: #F19704;
+}
+
+.listWrapper {
+    margin-bottom: 1em;
+}
+
+.listItem {
+    background-color: #232529;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 15px;
+    min-height: 44px;
+    vertical-align: middle;
+    overflow: hidden;
+    -webkit-transition: background-color 200ms;
+    transition: background-color 200ms;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.listLabel {
+    color: #d7d7d7;
+    font-size: 17px;
+    white-space: nowrap;
+}
+.listContent {
+    flex: 1;
+    display: flex;
+    display: -webkit-flex;
+    overflow-y: scroll;
+}
+
+.input {
+    background-color: transparent;
+    text-align: end;
+    border: none;
+    color: #CACDD6;
+    flex: 1;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.btnCode {
+    color: #F19704;
+    border-left: #ddd solid 1px;
+    padding-left: 12px;
+    margin-left: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.btnCodeDisabled {
+    composes: btnCode;
+    color: #7D7D7D;
+}
+
+.btnCommit {
+    width: 100%;
+    border-radius: 0;
+    background-color: #FE7800;
+    color: white;
+    margin-top: 3em;
+}
+.btnCommit::before {
+    content: none !important;
+}
+.btnCommitActive {
+    background-color: #FAAF6C;
+}
+
+/* antd 覆盖 */
+.am-list-item .am-input-label {
+    color: white;
+}

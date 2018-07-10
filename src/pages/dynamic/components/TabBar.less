@@ -1,0 +1,32 @@
+
+.tabIcon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.tabsWrap {
+    border: 1px solid #3A3F46;
+    border-radius: .3em;
+    overflow: hidden;
+    min-width: 9em;
+    &>span {
+        padding: 0 .5em;
+        line-height: 1.6em;
+        display: inline-block;
+        vertical-align: middle;
+        height: 1.6em;
+        font-size: .9em;
+        :global {
+            .am-badge-text {
+                font-size: .6em;
+                height: 1.2em;
+                line-height: 1.2em;
+                border-radius: .6em;
+                top: -.4em;
+            }
+        }
+        &.active {
+            background-color: #3A3F46;
+        }
+    }
+}

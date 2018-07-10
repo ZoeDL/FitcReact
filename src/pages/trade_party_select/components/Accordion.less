@@ -1,0 +1,31 @@
+@import '../../../global.less';
+
+.accordionItem {
+    .accordionHeader {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        background-color: @content-background;
+        padding: .3em .5em;
+        img {
+            width: 1em;
+            height: 1em;
+            margin-right: .5em;
+            transition: transform .2s ease, -webkit-transform .2s ease;
+            
+        }
+        .active {
+            transform: rotate(90deg);
+        }
+    }
+    .accordionContent {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &:not(:last-child):not(.active) {
+        border-bottom: 1px solid @separator-color;
+    }
+}

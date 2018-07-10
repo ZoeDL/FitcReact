@@ -1,0 +1,14 @@
+
+.list {
+    margin-bottom: .6em;
+}
+
+.button {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+}
+.button::before {
+    content: none !important;
+}

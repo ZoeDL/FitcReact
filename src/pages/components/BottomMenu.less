@@ -1,0 +1,36 @@
+@import '../../global.less';
+
+.wrapper {
+    :global {
+        .am-modal-content {
+            background-color: transparent !important; 
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.btnWrap {
+    text-align: center;
+    .btnIcon {
+        width: 3em;
+        height: 3em;
+    }
+    div:last-child {
+        margin-top: 6px;
+        color: @font-white;
+    }
+}
+
+.cancelWrap {
+    text-align: center;
+    img[alt=icon] {
+        width: 3em;
+        height: 3em;
+    }
+}
